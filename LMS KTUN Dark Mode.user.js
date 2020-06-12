@@ -2,7 +2,7 @@
 // @name         LMS KTUN Dark Mode
 // @namespace    https://github.com/Acidooo/LMS-Dark-Mode
 // @icon         https://lms.ktun.edu.tr/pluginfile.php/1/theme_remui/faviconurl/1589613162/imageedit_1_7336125810.png
-// @version      1.1.4
+// @version      1.1.5
 // @author       Acido
 // @description   Dark Mode for lms.ktun.edu.tr
 // @include      *://lms.ktun.edu.tr/*
@@ -11,17 +11,24 @@
 // @updateURL    https://github.com/Acidooo/LMS-Dark-Mode/raw/master/LMS%20KTUN%20Dark%20Mode.user.js
 // @run-at       document-start
 // ==/UserScript==
+/*jshint esversion: 6 */
+
+try{
+    var button = document.createElement("Button");
+    button.innerHTML = "Title";
+    button.style = "top:0;right:0;position:absolute;z-index: 9999";
+    document.body.appendChild(button);}
+catch(err){
+    console.log(err);
+}
 
 
 GM_addStyle(`
-
-
 
 ul.weeks li.section .content {
     margin: 0;
     background-color: #444;
 }
-
 
 .p-0{background-color:none;}
 
@@ -130,6 +137,16 @@ h4.sectionname a { color: #b90000; }
 
 /*mobile*/
 .d-block { background-color: #444; }
+
+/*User Profile*/
+
+#page-enrol-users .page-profile #filterform, .page-profile #page-enrol-users #filterform, .page-profile .card-block, .page-profile .userprofile .profile_tree section, .page-profile .well, .page-profile .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax #chat-messages .chat-message.course-theme, .page-profile .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax .yui-layout-unit-bottom, .page-profile .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax .yui-layout-unit-right, .userprofile .profile_tree .page-profile section, .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax #chat-messages .page-profile .chat-message.course-theme, .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax .page-profile .yui-layout-unit-bottom, .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax .page-profile .yui-layout-unit-right {
+    background-color: #888;
+}
+.page-profile .page-content .list-group-item {    background-color: #444; }
+.page-profile .card-footer { background-color: #333; }
+.additional-actions .col-12 .moodle-actionmenu, .additional-actions .col-12 a {background-color: #999;color: #ffffff;}
+
 
 
 `);
