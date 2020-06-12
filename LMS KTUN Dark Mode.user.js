@@ -1,19 +1,15 @@
 // ==UserScript==
 // @name         LMS KTUN Dark Mode
 // @namespace    https://github.com/Acidooo
-// @version      1.1.1
+// @version      1.1.2
 // @author       Acido
+// @description   Dark Mode for lms.ktun.edu.tr
 // @include      *://lms.ktun.edu.tr/*
 // @grant        GM_addStyle
 // @downloadURL  https://github.com/Acidooo/LMS-Dark-Mode/raw/master/LMS%20KTUN%20Dark%20Mode.user.js
 // @updateURL    https://github.com/Acidooo/LMS-Dark-Mode/raw/master/LMS%20KTUN%20Dark%20Mode.user.js
+// @run-at       document-start
 // ==/UserScript==
-
-// $(".navbar-brand-logo.h-full.w-full").css('background-image', 'url(https://github.com/Acidooo/LMS-Dark-Mode/raw/master/logo.png)');
-// var logo = document.getElementsByClassName("navbar-brand-logo h-full w-full");
-// logo.foreach( x => )
-// console.log(logo)
-
 
 
 GM_addStyle(`
