@@ -5,7 +5,8 @@
 // @author       Acido
 // @include      *://lms.ktun.edu.tr/*
 // @grant        GM_addStyle
-// @require      http://code.jquery.com/jquery-3.4.1.min.js
+// @downloadURL  https://github.com/Acidooo/LMS-Dark-Mode/raw/master/LMS%20KTUN%20Dark%20Mode.user.js
+// @updateURL    https://github.com/Acidooo/LMS-Dark-Mode/raw/master/LMS%20KTUN%20Dark%20Mode.user.js
 // ==/UserScript==
 
 // $(".navbar-brand-logo.h-full.w-full").css('background-image', 'url(https://github.com/Acidooo/LMS-Dark-Mode/raw/master/logo.png)');
