@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         LMS KTUN Dark Mode
-// @icon         https://lms.ktun.edu.tr/pluginfile.php/1/theme_remui/faviconurl/1589613162/imageedit_1_7336125810.png
 // @namespace    https://github.com/Acidooo/LMS-Dark-Mode
-// @version      1.1.3
+// @icon         https://lms.ktun.edu.tr/pluginfile.php/1/theme_remui/faviconurl/1589613162/imageedit_1_7336125810.png
+// @version      1.1.4
 // @author       Acido
 // @description   Dark Mode for lms.ktun.edu.tr
 // @include      *://lms.ktun.edu.tr/*
@@ -14,6 +14,8 @@
 
 
 GM_addStyle(`
+
+
 
 ul.weeks li.section .content {
     margin: 0;
@@ -66,10 +68,15 @@ a.list-group-item { color: #d6d4d4; }
 .messaging-area-container .messaging-area .contacts-area .tabs .tab.selected { background-color: #444; }
 .messaging-area-container .messaging-area .contacts-area .tabs .tab { background-color: #444; }
 .messaging-area-container .messaging-area .messages-area .response { background-color: #444; }
-.messaging-area-container .messaging-area .contacts-area .contacts .contact.selected { background-color: #666; }
+.messaging-area-container .messaging-area .messages-area .response.messaging { background-color: #444; }
+.messaging-area-container .messaging-area .contacts-area .contacts .contact.selected { background-color: #999; }
+.messaging-area-container .messaging-area .contacts-area .contacts .contact:hover { background-color: #444; }
 .messaging-area-container * { color: #fff; }
 .chat-left .chat-content { background-color: #3690c5; }
 .messaging-area-container .messaging-area .contacts-area .searchtextarea .form-control { background-color: #444444; }
+
+
+.response.messaging{ background-color: #444; }//
 
 /*Collapsed sides*/
 
