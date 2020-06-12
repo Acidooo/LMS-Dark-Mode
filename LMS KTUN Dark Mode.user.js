@@ -1,5 +1,6 @@
 // ==UserScript==
 // @name         LMS KTUN Dark Mode
+// @icon         https://lms.ktun.edu.tr/pluginfile.php/1/theme_remui/faviconurl/1589613162/imageedit_1_7336125810.png
 // @namespace    https://github.com/Acidooo/LMS-Dark-Mode
 // @version      1.1.3
 // @author       Acido
