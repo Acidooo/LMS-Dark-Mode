@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LMS KTUN Dark Mode
-// @namespace    https://github.com/Acidooo
-// @version      1.1.2
+// @namespace    https://github.com/Acidooo/LMS-Dark-Mode
+// @version      1.1.3
 // @author       Acido
 // @description   Dark Mode for lms.ktun.edu.tr
 // @include      *://lms.ktun.edu.tr/*
