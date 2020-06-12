@@ -2,7 +2,7 @@
 // @name         LMS KTUN Dark Mode
 // @namespace    https://github.com/Acidooo/LMS-Dark-Mode
 // @icon         https://lms.ktun.edu.tr/pluginfile.php/1/theme_remui/faviconurl/1589613162/imageedit_1_7336125810.png
-// @version      1.1.8
+// @version      1.1.9
 // @author       Acido
 // @description   Dark Mode for lms.ktun.edu.tr
 // @include      *://lms.ktun.edu.tr/*
@@ -14,6 +14,20 @@
 // ==/UserScript==
 
 GM_addStyle(`
+
+/*profile image placeholders*/
+img { filter: invert(80%); }
+
+/*filemanager*/
+.filemanager-toolbar { background-color: #999; }
+.fp-iconview .fp-filename-field .fp-filename {background: #fff0;}
+
+/*odev*/
+.path-mod-assign div.submissionsummarytable table tbody tr td.c0 {background-color: #444;color: #dadada;}
+#page-admin-course-index .editcourse tbody td, .forumheaderlist tbody td, .generaltable tbody td, form#movecourses table tbody td, table#defineroletable tbody td, table#explaincaps tbody td, table#listdirectories tbody td, table.collection tbody td, table.flexible tbody td, table.grading-report tbody td, table.rolecaps tbody td, table.userenrolment tbody td {     background-color: #555;       color: #dadada; }
+.path-mod-assign td.submissionstatussubmitted, .path-mod-assign div.submissionstatussubmitted, .path-mod-assign a:link.submissionstatussubmitted {    background-color: #cfefcf;  }
+.path-mod-assign td.submissiongraded, .path-mod-assign div.submissiongraded { }
+.path-mod-assign td.earlysubmission, .path-mod-assign div.earlysubmission {}
 
 /*quiz*/
 table.quizreviewsummary td.cell {    background: #444!important;    color: #e4eaec;}
@@ -32,6 +46,7 @@ table.quizreviewsummary th.cell {    background: #333!important;    color: #daea
     color: #ff3838;
 }
 .mr-5 {    background-color: #f96868;    color: #fff; }
+#page-mod-quiz-view .generalbox#feedback h3 {color: #f96868;}
 
 
 .card-header:first-child { background-color: #444; }
@@ -63,7 +78,7 @@ a.list-group-item { color: #d6d4d4; }
 .px-20 { background-color: #333; }
 .page-aside-section:first-child { background-color: #333; }
 #page-enrol-users #filterform, .card, .groupinfobox, .que .history, .userprofile .profile_tree section, .well, .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax #chat-messages .chat-message.course-theme, .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax .yui-layout-unit-bottom, .yui-skin-sam .yui-layout.path-mod-chat-gui_ajax .yui-layout-unit-right {
-       background-color: #333;
+       background-color: #777;
 }
 
 /*takvim*/
