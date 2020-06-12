@@ -2,7 +2,7 @@
 // @name         LMS KTUN Dark Mode
 // @namespace    https://github.com/Acidooo/LMS-Dark-Mode
 // @icon         https://lms.ktun.edu.tr/pluginfile.php/1/theme_remui/faviconurl/1589613162/imageedit_1_7336125810.png
-// @version      1.1.6
+// @version      1.1.7
 // @author       Acido
 // @description   Dark Mode for lms.ktun.edu.tr
 // @include      *://lms.ktun.edu.tr/*
@@ -15,13 +15,9 @@
 
 GM_addStyle(`
 
-ul.weeks li.section .content {
-    margin: 0;
-    background-color: #444;
-}
-
+.card-header:first-child { background-color: #444; }
+ul.weeks li.section .content { background-color: #444; }
 .p-0{background-color:none;}
-
 body { color: #dadada; }
 
 /*dropdown message*/
@@ -87,7 +83,7 @@ a.list-group-item { color: #d6d4d4; }
 
 .collapse navbar-collapse .navbar-collapse-toolbar { background-color: #666; }
 .no-overflow { color: #dadada; font-weight: bold; }
-h4.sectionname a { color: #b90000; }
+h4.sectionname a { color: #ff3838; }
 .section li.activity { background-color: #444; }
 .section .activity.list-group-item:first-child { background-color: #444; }
 //.p-0 { background-color: #666; }
