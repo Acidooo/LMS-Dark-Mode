@@ -2,16 +2,16 @@
 // @name         LMS KTUN Dark Mode
 // @namespace    https://github.com/Acidooo/LMS-Dark-Mode
 // @icon         https://lms.ktun.edu.tr/pluginfile.php/1/theme_remui/faviconurl/1589613162/imageedit_1_7336125810.png
-// @version      1.1.5
+// @version      1.1.6
 // @author       Acido
 // @description   Dark Mode for lms.ktun.edu.tr
 // @include      *://lms.ktun.edu.tr/*
 // @grant        GM_addStyle
 // @downloadURL  https://github.com/Acidooo/LMS-Dark-Mode/raw/master/LMS%20KTUN%20Dark%20Mode.user.js
 // @updateURL    https://github.com/Acidooo/LMS-Dark-Mode/raw/master/LMS%20KTUN%20Dark%20Mode.user.js
+// @require      http://code.jquery.com/jquery-3.4.1.min.js
 // @run-at       document-start
 // ==/UserScript==
-/*jshint esversion: 6 */
 
 GM_addStyle(`
 
@@ -113,8 +113,7 @@ h4.sectionname a { color: #b90000; }
 .scrollable-vertical.is-enabled .scrollable-container { background-color: #444; }
 .site-menubar-unfold .site-menu>.site-menu-item>a .site-menu-title { color: #fff; }
 .site-menubar-light .site-menubar-footer>a { background-color: #333; }
-.site-menubar-light .site-menubar-footer>a:hover { background-color: #666; }
-
+.site-menubar-light .site-menubar-footer>a:hover { background-color: #666; } 
 
 /*nav-bar*/
 .navbar-default .navbar-toolbar .nav-link { color: #ffffff; }
@@ -137,6 +136,9 @@ h4.sectionname a { color: #b90000; }
 .page-profile .card-footer { background-color: #333; }
 .additional-actions .col-12 .moodle-actionmenu, .additional-actions .col-12 a {background-color: #999;color: #ffffff;}
 
-
-
 `);
+
+setTimeout(function () {
+    $(".p-10.course-cover-image.pb-30").attr('style', "background-image: none !important"); //Ders sayfasi baslik yazisi icin
+    // $(".p-10.course-cover-image.pb-30").css({"background-image": "none !important"});
+   }, 100);
