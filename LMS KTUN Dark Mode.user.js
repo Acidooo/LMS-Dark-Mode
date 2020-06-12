@@ -2,7 +2,7 @@
 // @name         LMS KTUN Dark Mode
 // @namespace    https://github.com/Acidooo/LMS-Dark-Mode
 // @icon         https://lms.ktun.edu.tr/pluginfile.php/1/theme_remui/faviconurl/1589613162/imageedit_1_7336125810.png
-// @version      1.1.7
+// @version      1.1.8
 // @author       Acido
 // @description   Dark Mode for lms.ktun.edu.tr
 // @include      *://lms.ktun.edu.tr/*
@@ -14,6 +14,25 @@
 // ==/UserScript==
 
 GM_addStyle(`
+
+/*quiz*/
+table.quizreviewsummary td.cell {    background: #444!important;    color: #e4eaec;}
+table.quizreviewsummary th.cell {    background: #333!important;    color: #daeae1;}
+.que .info { background: #444!important;  }
+.que h3.no { color: #ff3838!important;  }
+.que .qtext {color: #dadada!important; }
+.que.multichoice .answer div.r0, .que.multichoice .answer div.r1 {text-indent: 25px!important; }
+.radio-custom label::before { margin-left: 20px!important; }
+.radio-custom label::after { margin-left: 20px; }
+#page-admin-course-index .editcourse tbody tr:nth-of-type(odd), .forumheaderlist tbody tr:nth-of-type(odd), .generaltable tbody tr:nth-of-type(odd), .table-striped tbody tr:nth-of-type(odd), form#movecourses table tbody tr:nth-of-type(odd), table#defineroletable tbody tr:nth-of-type(odd), table#explaincaps tbody tr:nth-of-type(odd), table#listdirectories tbody tr:nth-of-type(odd), table.collection tbody tr:nth-of-type(odd), table.flexible tbody tr:nth-of-type(odd), table.grading-report tbody tr:nth-of-type(odd), table.rolecaps tbody tr:nth-of-type(odd), table.userenrolment tbody tr:nth-of-type(odd) {
+    background-color: #444;
+    color: #dadada;
+}
+#page-admin-course-index .editcourse tbody td a, .forumheaderlist tbody td a, .generaltable tbody td a, form#movecourses table tbody td a, table#defineroletable tbody td a, table#explaincaps tbody td a, table#listdirectories tbody td a, table.collection tbody td a, table.flexible tbody td a, table.grading-report tbody td a, table.rolecaps tbody td a, table.userenrolment tbody td a {
+    color: #ff3838;
+}
+.mr-5 {    background-color: #f96868;    color: #fff; }
+
 
 .card-header:first-child { background-color: #444; }
 ul.weeks li.section .content { background-color: #444; }
