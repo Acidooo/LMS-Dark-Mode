@@ -2,7 +2,7 @@
 // @name         LMS KTUN Dark Mode
 // @namespace    https://github.com/Acidooo/LMS-Dark-Mode
 // @icon         https://lms.ktun.edu.tr/pluginfile.php/1/theme_remui/faviconurl/1589613162/imageedit_1_7336125810.png
-// @version      1.1.9
+// @version      1.1.10
 // @author       Acido
 // @description   Dark Mode for lms.ktun.edu.tr
 // @include      *://lms.ktun.edu.tr/*
@@ -16,7 +16,7 @@
 GM_addStyle(`
 
 /*profile image placeholders*/
-img { filter: invert(80%); }
+//img { filter: invert(80%); } //img color invert
 
 /*filemanager*/
 .filemanager-toolbar { background-color: #999; }
