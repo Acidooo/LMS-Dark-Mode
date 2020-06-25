@@ -2,7 +2,7 @@
 // @name         LMS KTUN Dark Mode
 // @namespace    https://github.com/Acidooo/LMS-Dark-Mode
 // @icon         https://lms.ktun.edu.tr/pluginfile.php/1/theme_remui/faviconurl/1589613162/imageedit_1_7336125810.png
-// @version      1.1.12
+// @version      1.1.13
 // @author       Acido
 // @description   Dark Mode for lms.ktun.edu.tr
 // @include      *://lms.ktun.edu.tr/*
@@ -14,6 +14,45 @@
 // ==/UserScript==
 
 GM_addStyle(`
+
+span.navbar-brand-logo.h-full.w-full {
+    filter: drop-shadow(8px 8px 8px red);
+}
+
+/*
+.navbar-brand-logo { filter: drop-shadow(8px 8px 8px red); } */
+
+/*
+.navbar-brand-logo {
+animation: breath 3s ease-out infinite alternate;
+}
+
+@keyframes breath{
+
+/*   from { filter: drop-shadow(0px 0px 0px red);}
+  to {filter: drop-shadow(10px 10px 10px red);} */
+
+ from {  box-shadow: 0px 0px 0px 0px red;}
+  to { box-shadow: 10px 10px 10px 2px red;}
+}
+ */
+/*
+//  0% { filter: drop-shadow(0px 0px 0px red);  }
+//  10% { filter: drop-shadow(1px 1px 1px red);  }
+//  20% { filter: drop-shadow(2px 2px 2px red);  }
+//  30% { filter: drop-shadow(3px 3px 3px red);  }
+//  40% { filter: drop-shadow(4px 4px 4px red);  }
+//  50% { filter: drop-shadow(5px 5px 5px red);  }
+//  60% { filter: drop-shadow(6px 6px 6px red);  }
+//  70% { filter: drop-shadow(7px 7px 7px red);  }
+//  80% { filter: drop-shadow(8px 8px 8px red);  }
+//  90% { filter: drop-shadow(9px 9px 9px red);  }
+//  100%{ filter: drop-shadow(10px 10px 10px red);  }
+*/
+
+
+
+
 
 /*profile image placeholders*/
 //img { filter: invert(80%); } //img color invert
