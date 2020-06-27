@@ -2,7 +2,7 @@
 // @name         LMS KTUN Dark Mode
 // @namespace    https://github.com/Acidooo/LMS-Dark-Mode
 // @icon         https://lms.ktun.edu.tr/pluginfile.php/1/theme_remui/faviconurl/1589613162/imageedit_1_7336125810.png
-// @version      1.1.13
+// @version      1.1.14
 // @author       Acido
 // @description   Dark Mode for lms.ktun.edu.tr
 // @include      *://lms.ktun.edu.tr/*
@@ -245,16 +245,32 @@ select.form-control:not([size]):not([multiple]) { background-color: #dadada; }
 #page-grade-grading-manage .actions .btn-group>.action:not(:first-child):not(:last-child):not(.dropdown-toggle), #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .btn-group>input:not(:first-child):not(:last-child):not(.dropdown-toggle), #rubric-rubric.gradingform_rubric .btn-group>.addcriterion:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group>.btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group>.qnbutton:not(:first-child):not(:last-child):not(.dropdown-toggle), .section-modchooser-link .btn-group>a:not(:first-child):not(:last-child):not(.dropdown-toggle) { color: #444;}
 #page-grade-grading-manage .actions .btn-group>.action:last-child:not(:first-child), #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel .btn-group>input:last-child:not(:first-child), #rubric-rubric.gradingform_rubric .btn-group>.addcriterion:last-child:not(:first-child), .btn-group>.btn:last-child:not(:first-child), .btn-group>.dropdown-toggle:not(:first-child), .btn-group>.qnbutton:last-child:not(:first-child), .section-modchooser-link .btn-group>a:last-child:not(:first-child) { color: #444; }
 
+/*login ekranı*/
+.checkbox-custom label {    color: #f96868; }
+.page-login-v2 form a { color: black; }
 
-
-
+/*Bildirimler*/
+.list-group-item { background-color: #666; }
 
 
 
 
 `);
 
-setTimeout(function () {
-    $(".p-10.course-cover-image.pb-30").attr('style', "background-image: none !important"); //Ders sayfasi baslik yazisi icin
-    // $(".p-10.course-cover-image.pb-30").css({"background-image": "none !important"});
-   }, 100);
+try
+{
+    setTimeout(function () {
+        $(".p-10.course-cover-image.pb-30").attr('style', "background-image: none !important"); //Ders sayfasi baslik yazisi icin
+        // $(".p-10.course-cover-image.pb-30").css({"background-image": "none !important"});
+        if(window.location.href.startsWith("https://lms.ktun.edu.tr/login/index_auth.php") ){
+            document.getElementById("rememberusername").checked = true;
+
+        }
+    }, 200);
+}
+catch(err)
+{
+    console.log("rememberusarname:"+err)
+}
+
+
