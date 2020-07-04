@@ -2,7 +2,7 @@
 // @name         LMS KTUN Dark Mode
 // @namespace    https://github.com/Acidooo/LMS-Dark-Mode
 // @icon         https://lms.ktun.edu.tr/pluginfile.php/1/theme_remui/faviconurl/1589613162/imageedit_1_7336125810.png
-// @version      1.1.14
+// @version      1.1.15
 // @author       Acido
 // @description   Dark Mode for lms.ktun.edu.tr
 // @include      *://lms.ktun.edu.tr/*
@@ -49,8 +49,6 @@ animation: breath 3s ease-out infinite alternate;
 //  90% { filter: drop-shadow(9px 9px 9px red);  }
 //  100%{ filter: drop-shadow(10px 10px 10px red);  }
 */
-
-
 
 
 
@@ -226,10 +224,12 @@ background-color: #888; }
 .h1, .h2, .h3, h1, h2, h3 {    color: #dadada; }
 
 
+
 /*forum cevaplari*/
-.forumpost #course-category-listings .content-mask, .forumpost #course-category-listings .options, .forumpost #course-category-listings .topic, .forumpost .row .content-mask, .forumpost .row .options, .forumpost .row .topic {
-    background-color: #666666;
-}
+.forumpost #course-category-listings .content-mask, .forumpost #course-category-listings .options, .forumpost #course-category-listings .topic, .forumpost .row .content-mask, .forumpost .row .options, .forumpost .row .topic { background-color: #666666;}
+.forumpost.unread .row.header, .path-course-view .unread, span.unread {    /* background-color: none !important; */ }
+.forumpost #course-category-listings .left, .forumpost .row .left {     background-color: #666; }
+
 
 /*Odev gonderim penceresi*/
 //#page-grade-grading-manage .actions .action, #rubric-rubric.gradingform_rubric #rubric-criteria .criterion .addlevel input, #rubric-rubric.gradingform_rubric .addcriterion, .btn, .qnbutton, .section-modchooser-link a {  background-color: #f96868; }
@@ -270,7 +270,7 @@ try
 }
 catch(err)
 {
-    console.log("rememberusarname:"+err)
+    console.log("rememberusarname:"+err);
 }
 
 
