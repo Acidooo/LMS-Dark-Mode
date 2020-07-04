@@ -2,7 +2,7 @@
 // @name         LMS KTUN Dark Mode
 // @namespace    https://github.com/Acidooo/LMS-Dark-Mode
 // @icon         https://lms.ktun.edu.tr/pluginfile.php/1/theme_remui/faviconurl/1589613162/imageedit_1_7336125810.png
-// @version      1.1.15
+// @version      1.1.16
 // @author       Acido
 // @description   Dark Mode for lms.ktun.edu.tr
 // @include      *://lms.ktun.edu.tr/*
@@ -237,7 +237,7 @@ button, input {    border-radius: 15px; background-color: #efefef; color: black;
 .moodle-dialogue-base .moodle-dialogue-wrap .moodle-dialogue-hd.yui3-widget-hd { background-color: #656565; }
 .modal-body, .moodle-dialogue-base .moodle-dialogue .moodle-dialogue-bd { background-color: #999; }
 .filemanager .yui3-datatable-even .yui3-datatable-cell { color: #797979; }
-.fp-filename {color: #6b6b6b; }
+.fp-filename {color: #dadada; }
 .fp-content-center { background-color: #777; }
 .form-control { border-radius: 20px;    background-color: #dadada; }
 select.form-control:not([size]):not([multiple]) { background-color: #dadada; }
